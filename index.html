@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF -8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enhanced HTML5 Content & Forms</title>
+    </head>
+    <body>
+        <header>
+            <h1>Healthy Living Portal</h1>
+            <p>Explore tips, resources and register for our welness program.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Top 3 Healthy Habits</h2>
+                <ol>
+                    <li>Balanced diet</li>
+                    <li>Regular exercise</li>
+                    <li>Adequate sleep</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Weekly Workout Schedule</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Activity</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Yoga</td>
+                            <td>30 mins</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Leg training</td>
+                            <td>45 mins</td>
+                        </tr>
+                        <tr>
+                            <td>Sartuday</td>
+                            <td>Jogging</td>
+                            <td>30 mins</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Excercise Video</h2>
+                <video controls width="320">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <section>
+                <h2>Join our Wellness Program</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" requireed><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <label>Prefered workout time</label>
+                        <select name="workout time" required>
+                            <option value="">--Select--</option>
+                            <option>Morning</option>
+                            <option>Afternoon</option>
+                            <option>Evening</option>
+                        </select><br><br>
+
+                        <label>Fitness goals:</label><br>
+                        <input type="checkbox" name="goal" value="weight-loss"> Weight loss
+                        <input type="checkbox" name="goal" value="muscle gain"> Muscle gain
+                        <input type="checkbox" name="goal" value="flexibility"> Flexibility
+                    </fieldset>
+                    <fieldset>
+                        <legend>Account security</legend>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="6" reqiured><br><br>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="{0-9}{10}" placeholder="0714234014" required>
+                    </fieldset>
+
+                    <br>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+        </main>
+    </body>
+
+</html>
